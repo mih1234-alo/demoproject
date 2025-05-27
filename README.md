@@ -44,22 +44,22 @@ Tạo tài khoản mới với mật khẩu sinh tự động
 Chỉnh sửa thông tin người dùng và phân quyền
 ## CẤU TRÚC DỰ ÁN
 hethongquanly/
-├── include/
-│   ├── user.h          # Khai báo lớp User
-│   └── wallet.h        # Khai báo lớp Wallet
-│
-├── src/
-│   ├── main.cpp        # Hàm chính và menu
-│   ├── user.cpp        # Triển khai hàm User
-│   └── wallet.cpp      # Triển khai hàm Wallet
-│
-├── data/               # Chứa dữ liệu .txt và file backup
-│   ├── users.txt
-│   └── wallets.txt
-│
-├── Makefile            # Biên dịch chương trình
-├── .gitignore          # Danh sách file không theo dõi bởi Git
-└── README.md           # Hướng dẫn và mô tả dự án
+include/
+user.h          # Khai báo lớp User
+wallet.h        # Khai báo lớp Wallet
+
+src/ 
+main.cpp        # Hàm chính và menu
+user.cpp        # Triển khai hàm User
+wallet.cpp      # Triển khai hàm Wallet
+
+data/               # Chứa dữ liệu .txt và file backup
+users.txt
+wallets.txt
+
+Makefile            # Biên dịch chương trình
+.gitignore          # Danh sách file không theo dõi bởi Git
+README.md           # Hướng dẫn và mô tả dự án
 ### YÊU CẦU HỆ THỐNG
 Trình biên dịch C++ hỗ trợ C++11 trở lên (g++, clang++)
 OpenSSL để băm SHA-256
