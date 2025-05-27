@@ -1,33 +1,29 @@
 # demoproject
 **Nguyễn Quang Tú - K24DTCN241** – Trưởng nhóm & lập trình chính main.cpp
-Viết hàm main(), menu chính, menu người dùng, menu admin.
-Gọi và điều phối các chức năng từ user.h và wallet.h.
-Xử lý luồng hoạt động của hệ thống: đăng nhập, đăng ký, đăng xuất, phân quyền.
-Kiểm tra sự tồn tại tài khoản admin, tạo mặc định nếu chưa có.
+- Viết hàm main(), menu chính, menu người dùng, menu admin.
+- Gọi và điều phối các chức năng từ user.h và wallet.h.
+- Xử lý luồng hoạt động của hệ thống: đăng nhập, đăng ký, đăng xuất, phân quyền.
+- Kiểm tra sự tồn tại tài khoản admin, tạo mặc định nếu chưa có.
 
 **Lò Văn Tín - K24DTCN238** – Xử lý người dùng user.h & user.cpp
 Thiết kế và triển khai class User, bao gồm:
-Các thuộc tính: username, password (SHA-256 hash), fullName, email, phone, role, walletID, oathSecretKey.
-Triển khai các chức năng: registerUser(), login(), changePassword(), updateProfile(), viewUsers(), adminEditUser().
+- Các thuộc tính: username, password (SHA-256 hash), fullName, email, phone, role, walletID, oathSecretKey.
+- Triển khai các chức năng: registerUser(), login(), changePassword(), updateProfile(), viewUsers(), adminEditUser().
 Sinh mã OTP (giả lập).
-Đọc/ghi tệp data/users.txt theo định dạng CSV, tạo file .bak.
+- Đọc/ghi tệp data/users.txt theo định dạng CSV, tạo file .bak.
 
 **Hồ Xuân Thái - K24DTCN229** – Quản lý ví điểm thưởng wallet.h & wallet.cpp
 Thiết kế và triển khai class Wallet, bao gồm:
-Các thuộc tính: walletID, balance, transactionLog.
-Triển khai các chức năng: depositPoints(), transferPoints(), viewWallet(), saveWallet(), loadWallet().
-Xử lý thao tác ghi/đọc tệp data/wallets.txt, quản lý nhật ký giao dịch.
+- Các thuộc tính: walletID, balance, transactionLog.
+- Triển khai các chức năng: depositPoints(), transferPoints(), viewWallet(), saveWallet(), loadWallet().
+- Xử lý thao tác ghi/đọc tệp data/wallets.txt, quản lý nhật ký giao dịch.
 
 **Vũ Đình Thề - K24DTCN235** – Thiết lập, bảo mật, cấu hình hệ thống & tài liệu
-Tạo và duy trì: Makefile, hướng dẫn biên dịch và chạy.
-Cấu hình thư viện OpenSSL, OATH Toolkit.
-Viết và cập nhật:README.md (giới thiệu, cách dùng, bảo mật, hướng dẫn OTP).
-Cấu trúc thư mục, hướng dẫn setup (trên Linux, macOS, WSL).
-Kiểm tra bảo mật: sinh mật khẩu ngẫu nhiên, băm SHA-256, lưu OATH key, OTP đầu vào/giả lập.
-Kết quả bàn giao:
-Makefile, README.md, cấu hình .gitignore
-Hướng dẫn cài đặt chi tiết (Linux, macOS, Windows WSL)
-Đảm bảo hệ thống hoạt động xuyên nền tảng
+- Tạo và duy trì: Makefile, hướng dẫn biên dịch và chạy.
+- Cấu hình thư viện OpenSSL, OATH Toolkit.
+- Viết và cập nhật:README.md (giới thiệu, cách dùng, bảo mật, hướng dẫn OTP).
+- Cấu trúc thư mục, hướng dẫn setup (trên Linux, macOS, WSL).
+- Kiểm tra bảo mật: sinh mật khẩu ngẫu nhiên, băm SHA-256, lưu OATH key, OTP đầu vào/giả lập.
 # TÍNH NĂNG CHÍNH
 ** Xác thực và bảo mật
 Đăng ký, đăng nhập tài khoản với mã OTP (sử dụng OATH Toolkit)
