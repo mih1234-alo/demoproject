@@ -98,7 +98,7 @@ while (true) {
     cout << "3. Thoat" << endl;
     cout << "======================================" << endl;
     cout << "Chon chuc nang: ";
-    
+
     int choice;
     cin >> choice;
 
@@ -272,4 +272,5 @@ while (true) {
     }
     return 0;
 }
+
 
